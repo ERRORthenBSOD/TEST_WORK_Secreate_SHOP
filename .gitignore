@@ -1,0 +1,17 @@
+typings
+dist
+coverage
+node_modules
+.idea
+../idea
+.vscode
+*.log
+.env
+.env*
+!.env.example
+src/generated
+pm2.json
+typings
+development.env
+upload/*
+package-lock.json
