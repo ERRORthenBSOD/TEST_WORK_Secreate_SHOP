@@ -1,0 +1,9 @@
+{
+  "express": {
+    "port": 9006,
+    "prefix": "/api",
+    "upload": "upload",
+    "imageStatic": "/client/images",
+    "imageUrl": "http://localhost:9006/client/images/"
+  }
+}

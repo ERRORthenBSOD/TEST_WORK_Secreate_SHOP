@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "server/db/shopDb.json"
+  ],
+  "env": {
+    "JWT_KEY": "super-secret"
+  }
+}

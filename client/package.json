@@ -1,0 +1,74 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.3.0",
+    "@material-ui/icons": "^4.2.1",
+    "axios": "^0.19.0",
+    "clsx": "^1.0.4",
+    "core-js": "^3.1.4",
+    "filepond": "^4.4.12",
+    "filepond-plugin-file-validate-size": "^2.2.0",
+    "filepond-plugin-file-validate-type": "^1.2.4",
+    "filepond-plugin-image-exif-orientation": "^1.0.6",
+    "filepond-plugin-image-preview": "^4.2.1",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.1",
+    "react-dom": "^16.8.6",
+    "react-filepond": "^7.0.1",
+    "react-material-ui-form-validator": "^2.0.9",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-text-mask": "^5.4.3",
+    "redux": "^4.0.4",
+    "sweetalert2": "^8.14.0",
+    "text-mask-addons": "^3.8.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --coverage  --maxWorkers=6",
+    "eject": "react-scripts eject",
+    "server": "nodemon ../server/server.js --config ../server/nodemon.json",
+    "dev": "concurrently \"yarn server\" \"yarn start\"",
+    "conc": "yarn add concurrently -D",
+    "initInstall": "concurrently \"yarn install\" \"yarn --cwd ../server install\"",
+    "restoreDb": "node ../server/migrate/migrateDb.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie >= 9"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie >= 9"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.3.5",
+    "nodemon": "^1.19.1",
+    "react-test-renderer": "^16.8.6",
+    "redux-devtools-extension": "^2.13.8"
+  }
+}

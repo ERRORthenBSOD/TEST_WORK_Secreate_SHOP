@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders without crashing 1`] = `
+<WithStyles(ForwardRef(AppBar))
+  className="makeStyles-appBar-5"
+  color="primary"
+  position="fixed"
+>
+  <WithStyles(ForwardRef(Toolbar))>
+    <div
+      className="makeStyles-grow-6"
+    />
+    <WithStyles(ForwardRef(Typography))
+      align="center"
+      className="makeStyles-fontWeight-8"
+      variant="h6"
+    >
+      «Магазин» - тестовое задание для компании Secreate.io
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Toolbar))>
+</WithStyles(ForwardRef(AppBar))>
+`;
